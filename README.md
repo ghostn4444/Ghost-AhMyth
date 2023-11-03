@@ -1,1 +1,1 @@
-# Ghost-Version-AhMyth
+# Ghost-AhMyth
