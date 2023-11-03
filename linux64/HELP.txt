@@ -1,0 +1,22 @@
+{
+    "main": "./app/main.js",
+    "devDependencies": {
+        "electron": "^11.5.0",
+        "electron-builder": "^22.11.7",
+        "electron-packager": "^15.4.0"
+    },
+    "license": "GNU GPLv3",
+    "build": {
+        "appId": "Ahmyth.android.rat",
+        "win": {
+            "publisherName": "AhMyth",
+            "icon": "build/icon.ico"
+        },
+        "asarUnpack": "**/app/Factory/**/*"
+    },
+    "scripts": {
+        "start": "npx electron ./app",
+        "clean": "rm -rf ./dist",
+        "build:linux64": "npx electron-builder --linux deb --x64",
+    }
+}
